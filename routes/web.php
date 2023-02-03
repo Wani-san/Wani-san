@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-
+    //追加
 /*
 |--------------------------------------------------------------------------
 | Web Routes
