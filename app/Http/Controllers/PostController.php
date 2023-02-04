@@ -9,18 +9,13 @@ class PostController extends Controller
 {
    public function index(Post $post)
   { 
-<<<<<<< HEAD
 
-     return view('posts/index')->with(['posts' => $post->getPaginateByLimit(1)]);  
-
-    return $post->get();
+        return view('posts/index')->with(['posts' => $post->getPaginateByLimit()]);
   }
-=======
-   return view('posts/index')->with(['posts' => $post->getPaginateByLimit(1)]);  
-   }
->>>>>>> dev_basis02
+    public function show(Post $post)
+{
+       return view('posts/show')->with(['post' => $post]);
+ //'post'はbladeファイルで使う変数。中身は$postはid=1のPostインスタンス。
 }
-
-   
-    
+}
 
