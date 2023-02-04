@@ -6,6 +6,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+
     <body>
         <h1>Blog Name</h1>
         <div class='posts'>
@@ -17,6 +18,7 @@
                 <p class='body'>{{ $post->body }}</p>
              </div>
             @endforeach
+
         </div>
         <div class='paginate'>
             {{ $posts->links() }}

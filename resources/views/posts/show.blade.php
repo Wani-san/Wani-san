@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -8,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
+
         <h1 class="title">
             {{ $post->title }}
         </h1>
@@ -20,5 +22,6 @@
         <div class="footer">
             <a href="/">戻る</a>
         </div>
+
     </body>
 </html>
